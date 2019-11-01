@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ucj-oj-kws">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nq5-1F-ZN6">
+                                <rect key="frame" x="57" y="431" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tNM-nd-5fR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to type something below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-mW-PgZ">
+                                <rect key="frame" x="98.5" y="310" width="217" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you type in the textfield will be on the label with no waiting" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="999" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbS-fb-UXc">
+                                <rect key="frame" x="32" y="515" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="URQ-df-44z"/>
+                                    <constraint firstAttribute="height" constant="50" id="a2B-lh-qJ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fbS-fb-UXc" firstAttribute="centerX" secondItem="ucj-oj-kws" secondAttribute="centerX" id="CMU-Tq-FDG"/>
+                            <constraint firstItem="nq5-1F-ZN6" firstAttribute="top" secondItem="4hG-mW-PgZ" secondAttribute="bottom" constant="100" id="N3D-Ol-Mad"/>
+                            <constraint firstItem="fbS-fb-UXc" firstAttribute="top" secondItem="nq5-1F-ZN6" secondAttribute="bottom" constant="50" id="THd-YE-mnZ"/>
+                            <constraint firstItem="nq5-1F-ZN6" firstAttribute="centerX" secondItem="ucj-oj-kws" secondAttribute="centerX" id="d9f-X3-klp"/>
+                            <constraint firstItem="nq5-1F-ZN6" firstAttribute="centerY" secondItem="ucj-oj-kws" secondAttribute="centerY" id="f8i-wD-BnE"/>
+                            <constraint firstItem="4hG-mW-PgZ" firstAttribute="centerX" secondItem="ucj-oj-kws" secondAttribute="centerX" id="hRR-YM-EOO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iHL-et-s2B"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="4hG-mW-PgZ" id="cqf-JC-vLb"/>
+                        <outlet property="text" destination="nq5-1F-ZN6" id="ips-0M-6Eu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>
